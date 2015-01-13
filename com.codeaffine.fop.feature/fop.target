@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="target" sequenceNumber="15">
+<?pde version="3.8"?><target name="target" sequenceNumber="16">
 <locations>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.equinox.sdk.feature.group" version="3.10.0.v20140909-1633"/>
@@ -46,6 +46,10 @@
 <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository"/>
 </location>
 <location path="${project_loc:com.codeaffine.fop.feature}/bundles" type="Directory"/>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="com.eclipsesource.osgi.additionals.feature.group" version="1.30.0.201409171437"/>
+<repository location="http://hstaudacher.github.io/osgi-additionals/"/>
+</location>
 </locations>
 <includeBundles>
 <plugin id="com.codeaffine.console.core"/>
@@ -58,9 +62,9 @@
 <plugin id="com.codeaffine.gonsole"/>
 <plugin id="com.codeaffine.gonsole.branding"/>
 <plugin id="com.codeaffine.gonsole.source"/>
-<plugin id="com.google.gson"/>
-<plugin id="com.google.guava" version="15.0.0.v201403281430"/>
+<plugin id="com.google.gson" version="2.2.4.v201311231704"/>
 <plugin id="com.google.guava" version="12.0.0.v201212092141"/>
+<plugin id="com.google.guava" version="15.0.0.v201403281430"/>
 <plugin id="com.ibm.icu" version="52.1.0.v201404241930"/>
 <plugin id="com.ibm.icu.source" version="52.1.0.v201404241930"/>
 <plugin id="com.jcraft.jsch"/>
@@ -89,33 +93,33 @@
 <plugin id="javax.xml" version="1.3.4.v201005080400"/>
 <plugin id="org.apache.ant"/>
 <plugin id="org.apache.ant.source"/>
-<plugin id="org.apache.batik.bridge"/>
-<plugin id="org.apache.batik.bridge.source"/>
+<plugin id="org.apache.batik.bridge" version="1.6.0.v201011041432"/>
+<plugin id="org.apache.batik.bridge.source" version="1.6.0.v201011041432"/>
 <plugin id="org.apache.batik.css" version="1.6.0.v201011041432"/>
 <plugin id="org.apache.batik.css.source" version="1.6.0.v201011041432"/>
-<plugin id="org.apache.batik.dom"/>
-<plugin id="org.apache.batik.dom.source"/>
-<plugin id="org.apache.batik.dom.svg"/>
-<plugin id="org.apache.batik.dom.svg.source"/>
-<plugin id="org.apache.batik.ext.awt"/>
-<plugin id="org.apache.batik.ext.awt.source"/>
+<plugin id="org.apache.batik.dom" version="1.6.0.v201011041432"/>
+<plugin id="org.apache.batik.dom.source" version="1.6.0.v201011041432"/>
+<plugin id="org.apache.batik.dom.svg" version="1.6.0.v201011041432"/>
+<plugin id="org.apache.batik.dom.svg.source" version="1.6.0.v201011041432"/>
+<plugin id="org.apache.batik.ext.awt" version="1.6.0.v201011041432"/>
+<plugin id="org.apache.batik.ext.awt.source" version="1.6.0.v201011041432"/>
 <plugin id="org.apache.batik.extension"/>
 <plugin id="org.apache.batik.extension.source"/>
-<plugin id="org.apache.batik.parser"/>
-<plugin id="org.apache.batik.parser.source"/>
-<plugin id="org.apache.batik.pdf"/>
-<plugin id="org.apache.batik.svggen"/>
-<plugin id="org.apache.batik.svggen.source"/>
+<plugin id="org.apache.batik.parser" version="1.6.0.v201011041432"/>
+<plugin id="org.apache.batik.parser.source" version="1.6.0.v201011041432"/>
+<plugin id="org.apache.batik.pdf" version="1.6.0.v201105071520"/>
+<plugin id="org.apache.batik.svggen" version="1.6.0.v201011041432"/>
+<plugin id="org.apache.batik.svggen.source" version="1.6.0.v201011041432"/>
 <plugin id="org.apache.batik.swing"/>
 <plugin id="org.apache.batik.swing.source"/>
-<plugin id="org.apache.batik.transcoder"/>
-<plugin id="org.apache.batik.transcoder.source"/>
+<plugin id="org.apache.batik.transcoder" version="1.6.0.v201011041432"/>
+<plugin id="org.apache.batik.transcoder.source" version="1.6.0.v201011041432"/>
 <plugin id="org.apache.batik.util" version="1.6.0.v201011041432"/>
 <plugin id="org.apache.batik.util.gui" version="1.6.0.v201011041432"/>
 <plugin id="org.apache.batik.util.gui.source" version="1.6.0.v201011041432"/>
 <plugin id="org.apache.batik.util.source" version="1.6.0.v201011041432"/>
-<plugin id="org.apache.batik.xml"/>
-<plugin id="org.apache.batik.xml.source"/>
+<plugin id="org.apache.batik.xml" version="1.6.0.v201011041432"/>
+<plugin id="org.apache.batik.xml.source" version="1.6.0.v201011041432"/>
 <plugin id="org.apache.commons.codec" version="1.6.0.v201305230611"/>
 <plugin id="org.apache.commons.codec.source"/>
 <plugin id="org.apache.commons.compress"/>
@@ -141,6 +145,12 @@
 <plugin id="org.apache.lucene.core.source"/>
 <plugin id="org.apache.mina.core"/>
 <plugin id="org.apache.mina.core.source"/>
+<plugin id="org.apache.pdfbox"/>
+<plugin id="org.apache.pdfbox.fontbox"/>
+<plugin id="org.apache.pdfbox.fontbox.source"/>
+<plugin id="org.apache.pdfbox.jempbox"/>
+<plugin id="org.apache.pdfbox.jempbox.source"/>
+<plugin id="org.apache.pdfbox.source"/>
 <plugin id="org.apache.servicemix.bundles.fop"/>
 <plugin id="org.apache.servicemix.bundles.fop.source"/>
 <plugin id="org.apache.servicemix.bundles.xmlgraphics-commons"/>
@@ -175,8 +185,8 @@
 <plugin id="org.eclipse.core.databinding.observable.source" version="1.4.1.v20140210-1835"/>
 <plugin id="org.eclipse.core.databinding.property" version="1.4.200.v20140214-0004"/>
 <plugin id="org.eclipse.core.databinding.property.source" version="1.4.200.v20140214-0004"/>
-<plugin id="org.eclipse.core.databinding.source" version="1.4.2.v20140729-1044"/>
 <plugin id="org.eclipse.core.databinding.source" version="1.4.1.v20140214-0004"/>
+<plugin id="org.eclipse.core.databinding.source" version="1.4.2.v20140729-1044"/>
 <plugin id="org.eclipse.core.expressions" version="3.4.600.v20140128-0851"/>
 <plugin id="org.eclipse.core.expressions.source" version="3.4.600.v20140128-0851"/>
 <plugin id="org.eclipse.core.externaltools"/>
@@ -225,10 +235,10 @@
 <plugin id="org.eclipse.e4.ui.bindings.source" version="0.10.200.v20140424-2042"/>
 <plugin id="org.eclipse.e4.ui.css.core" version="0.10.100.v20140424-2042"/>
 <plugin id="org.eclipse.e4.ui.css.core.source" version="0.10.100.v20140424-2042"/>
-<plugin id="org.eclipse.e4.ui.css.swt" version="0.11.101.v20140818-1343"/>
 <plugin id="org.eclipse.e4.ui.css.swt" version="0.11.100.v20140522-1045"/>
-<plugin id="org.eclipse.e4.ui.css.swt.source" version="0.11.101.v20140818-1343"/>
+<plugin id="org.eclipse.e4.ui.css.swt" version="0.11.101.v20140818-1343"/>
 <plugin id="org.eclipse.e4.ui.css.swt.source" version="0.11.100.v20140522-1045"/>
+<plugin id="org.eclipse.e4.ui.css.swt.source" version="0.11.101.v20140818-1343"/>
 <plugin id="org.eclipse.e4.ui.css.swt.theme" version="0.9.300.v20140424-2042"/>
 <plugin id="org.eclipse.e4.ui.css.swt.theme.source" version="0.9.300.v20140424-2042"/>
 <plugin id="org.eclipse.e4.ui.di" version="1.0.0.v20140328-2112"/>
@@ -241,20 +251,20 @@
 <plugin id="org.eclipse.e4.ui.widgets.source" version="1.0.0.v20140514-1823"/>
 <plugin id="org.eclipse.e4.ui.workbench" version="1.2.1.v20140901-1244"/>
 <plugin id="org.eclipse.e4.ui.workbench" version="1.1.0.v20140528-1949"/>
-<plugin id="org.eclipse.e4.ui.workbench.addons.swt" version="1.1.0.v20140528-1923"/>
 <plugin id="org.eclipse.e4.ui.workbench.addons.swt" version="1.1.1.v20140903-0821"/>
-<plugin id="org.eclipse.e4.ui.workbench.addons.swt.source" version="1.1.1.v20140903-0821"/>
+<plugin id="org.eclipse.e4.ui.workbench.addons.swt" version="1.1.0.v20140528-1923"/>
 <plugin id="org.eclipse.e4.ui.workbench.addons.swt.source" version="1.1.0.v20140528-1923"/>
-<plugin id="org.eclipse.e4.ui.workbench.renderers.swt" version="0.12.1.v20140903-1023"/>
+<plugin id="org.eclipse.e4.ui.workbench.addons.swt.source" version="1.1.1.v20140903-0821"/>
 <plugin id="org.eclipse.e4.ui.workbench.renderers.swt" version="0.12.0.v20140521-1818"/>
+<plugin id="org.eclipse.e4.ui.workbench.renderers.swt" version="0.12.1.v20140903-1023"/>
 <plugin id="org.eclipse.e4.ui.workbench.renderers.swt.source" version="0.12.0.v20140521-1818"/>
 <plugin id="org.eclipse.e4.ui.workbench.renderers.swt.source" version="0.12.1.v20140903-1023"/>
-<plugin id="org.eclipse.e4.ui.workbench.source" version="1.1.0.v20140528-1949"/>
 <plugin id="org.eclipse.e4.ui.workbench.source" version="1.2.1.v20140901-1244"/>
+<plugin id="org.eclipse.e4.ui.workbench.source" version="1.1.0.v20140528-1949"/>
 <plugin id="org.eclipse.e4.ui.workbench.swt" version="0.12.100.v20140509-1922"/>
 <plugin id="org.eclipse.e4.ui.workbench.swt" version="0.12.100.v20140530-1436"/>
-<plugin id="org.eclipse.e4.ui.workbench.swt.source" version="0.12.100.v20140509-1922"/>
 <plugin id="org.eclipse.e4.ui.workbench.swt.source" version="0.12.100.v20140530-1436"/>
+<plugin id="org.eclipse.e4.ui.workbench.swt.source" version="0.12.100.v20140509-1922"/>
 <plugin id="org.eclipse.e4.ui.workbench3" version="0.12.0.v20140227-2118"/>
 <plugin id="org.eclipse.e4.ui.workbench3.source" version="0.12.0.v20140227-2118"/>
 <plugin id="org.eclipse.ecf" version="3.4.0.v20140528-1625"/>
@@ -265,16 +275,16 @@
 <plugin id="org.eclipse.ecf.identity" version="3.4.0.v20140827-1444"/>
 <plugin id="org.eclipse.ecf.identity" version="3.4.0.v20140528-1625"/>
 <plugin id="org.eclipse.ecf.identity.source"/>
-<plugin id="org.eclipse.ecf.provider.filetransfer" version="3.2.200.v20140827-1444"/>
 <plugin id="org.eclipse.ecf.provider.filetransfer" version="3.2.200.v20140528-1625"/>
+<plugin id="org.eclipse.ecf.provider.filetransfer" version="3.2.200.v20140827-1444"/>
 <plugin id="org.eclipse.ecf.provider.filetransfer.httpclient4" version="1.0.800.v20140827-1444"/>
 <plugin id="org.eclipse.ecf.provider.filetransfer.httpclient4.source"/>
-<plugin id="org.eclipse.ecf.provider.filetransfer.httpclient4.ssl" version="1.0.0.v20140827-1444"/>
 <plugin id="org.eclipse.ecf.provider.filetransfer.httpclient4.ssl" version="1.0.0.v20140528-1625"/>
+<plugin id="org.eclipse.ecf.provider.filetransfer.httpclient4.ssl" version="1.0.0.v20140827-1444"/>
 <plugin id="org.eclipse.ecf.provider.filetransfer.httpclient4.ssl.source"/>
 <plugin id="org.eclipse.ecf.provider.filetransfer.source"/>
-<plugin id="org.eclipse.ecf.provider.filetransfer.ssl" version="1.0.0.v20140528-1625"/>
 <plugin id="org.eclipse.ecf.provider.filetransfer.ssl" version="1.0.0.v20140827-1444"/>
+<plugin id="org.eclipse.ecf.provider.filetransfer.ssl" version="1.0.0.v20140528-1625"/>
 <plugin id="org.eclipse.ecf.provider.filetransfer.ssl.source"/>
 <plugin id="org.eclipse.ecf.source"/>
 <plugin id="org.eclipse.ecf.ssl" version="1.1.0.v20140528-1625"/>
@@ -512,14 +522,14 @@
 <plugin id="org.eclipse.jface" version="3.10.0.v20140507-1527"/>
 <plugin id="org.eclipse.jface.databinding" version="1.6.200.v20140528-1422"/>
 <plugin id="org.eclipse.jface.databinding.source" version="1.6.200.v20140528-1422"/>
-<plugin id="org.eclipse.jface.source" version="3.10.1.v20140813-1009"/>
 <plugin id="org.eclipse.jface.source" version="3.10.0.v20140507-1527"/>
+<plugin id="org.eclipse.jface.source" version="3.10.1.v20140813-1009"/>
 <plugin id="org.eclipse.jface.text"/>
 <plugin id="org.eclipse.jface.text.source"/>
 <plugin id="org.eclipse.jgit" version="3.4.1.201406201815-r"/>
 <plugin id="org.eclipse.jgit" version="3.5.3.201412180710-r"/>
-<plugin id="org.eclipse.jgit.archive" version="3.4.1.201406201815-r"/>
 <plugin id="org.eclipse.jgit.archive" version="3.5.2.201411061900"/>
+<plugin id="org.eclipse.jgit.archive" version="3.4.1.201406201815-r"/>
 <plugin id="org.eclipse.jgit.pgm"/>
 <plugin id="org.eclipse.jgit.ui"/>
 <plugin id="org.eclipse.jsch.core"/>
@@ -548,10 +558,10 @@
 <plugin id="org.eclipse.m2e.profiles.ui"/>
 <plugin id="org.eclipse.m2e.refactoring"/>
 <plugin id="org.eclipse.m2e.scm"/>
-<plugin id="org.eclipse.osgi" version="3.10.0.v20140528-2014"/>
 <plugin id="org.eclipse.osgi" version="3.10.1.v20140909-1633"/>
-<plugin id="org.eclipse.osgi.compatibility.state" version="1.0.1.v20140709-1414"/>
+<plugin id="org.eclipse.osgi" version="3.10.0.v20140528-2014"/>
 <plugin id="org.eclipse.osgi.compatibility.state" version="1.0.0.v20140403-1907"/>
+<plugin id="org.eclipse.osgi.compatibility.state" version="1.0.1.v20140709-1414"/>
 <plugin id="org.eclipse.osgi.compatibility.state.source" version="1.0.1.v20140709-1414"/>
 <plugin id="org.eclipse.osgi.compatibility.state.source" version="1.0.0.v20140403-1907"/>
 <plugin id="org.eclipse.osgi.services" version="3.4.0.v20140312-2051"/>
@@ -688,13 +698,9 @@
 <plugin id="org.eclipse.wst.xml.ui"/>
 <plugin id="org.eclipse.wst.xsd.core"/>
 <plugin id="org.eclipse.xsd"/>
-<plugin id="org.hamcrest.core"/>
-<plugin id="org.hamcrest.core.source"/>
 <plugin id="org.jacoco.agent"/>
 <plugin id="org.jacoco.core"/>
 <plugin id="org.jacoco.report"/>
-<plugin id="org.junit"/>
-<plugin id="org.junit.source"/>
 <plugin id="org.kohsuke.args4j"/>
 <plugin id="org.moreunit"/>
 <plugin id="org.moreunit.core"/>
