@@ -16,3 +16,7 @@ The following bundles are published under CDDL (http://opensource.org/licenses/C
 * com.springsource.javax.media.jai.core-1.1.3.jar
 * com.springsource.javax.media.jai.codec-1.1.3.jar
 
+#P2 Repository
+The feature's bundles can be consumed from a public p2 repository located at
+http://fappel.github.io/FOP/
+
