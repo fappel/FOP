@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.codeaffine.fop.feature_1.0.0.qualifier.jar" id="com.codeaffine.fop.feature" version="1.0.0.qualifier">
+      <category name="com.codeaffine.fop"/>
+   </feature>
+   <category-def name="com.codeaffine.fop" label="Apache FOP and Dependencies">
+      <description>
+         Apache™ FOP (Formatting Objects Processor) is a print formatter driven by XSL formatting objects (XSL-FO) and an output independent formatter.
+      </description>
+   </category-def>
+</site>
