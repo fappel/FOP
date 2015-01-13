@@ -1,2 +1,2 @@
 # FOP
-Eclipse Feature that provides Apache™ FOP (Formatting Objects Processor) and its dependency bundles
+Apache™ FOP (Formatting Objects Processor) is a print formatter driven by XSL formatting objects (XSL-FO) and an output independent formatter. The feature provided by this repository contains a collection of bundles that are needed for using FOP within OSGi and Eclipse.
