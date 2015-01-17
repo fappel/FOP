@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: FOP Example
+Bundle-SymbolicName: com.codeaffine.fop.example
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: CODE AFFINE
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.apache.servicemix.bundles.fop;bundle-version="1.1.0",
+ org.apache.servicemix.bundles.xmlgraphics-commons;bundle-version="1.5.0",
+ com.eclipsesource.jaxrs.jersey-all;bundle-version="2.10.1"
+Service-Component: OSGI-INF/fop-service.xml,
+ OSGI-INF/pdf-service.xml
+Bundle-ActivationPolicy: lazy

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="PDF Service">
+   <implementation class="com.codeaffine.fop.example.PdfService"/>
+   <reference bind="setFopService" cardinality="1..1" interface="com.codeaffine.fop.example.FopService" name="FopService" policy="static"/>
+   <service>
+      <provide interface="com.codeaffine.fop.example.PdfService"/>
+   </service>
+</scr:component>
